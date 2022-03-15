@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "elm make src/Main.elm --output=build/index.html",
+    "build": "npm run build:create-output-directory && npm run build:copy && npm run build:elm",
+    "build:create-output-directory": "mkdir -p build/",
+    "build:copy": "cp -r public/* build/",
+    "build:elm": "elm make src/Main.elm --output=build/index.html",
+    "clean": "rm -rf build/",
     "dev": "elm reactor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

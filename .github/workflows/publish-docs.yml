@@ -12,7 +12,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Building page and storybook 🔧
+      - name: Building page 🔧
         run: |
           npm ci
           npm run build
