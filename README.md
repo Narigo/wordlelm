@@ -1,3 +1,3 @@
 # wordlelm
 
-Wordle clone by @tkshill
+Wordle clone by [@tkshill](https://github.com/tkshill/)
